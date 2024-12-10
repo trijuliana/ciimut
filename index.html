@@ -32,10 +32,47 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search form start -->
+       <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      <!-- Search form end -->
+
+      <!-- Shopping cart start -->
+       <div class="shopping-cart">
+        <div class="cart-items">
+          <img src="img/cincau 2.jpg" alt="ukuran 250ml">
+          <div class="item-detail">
+            <h3>Pesan 1</h3>
+            <div class="item-price">IDR 13K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-items"></i>
+        </div>
+        <div class="cart-items">
+          <img src="img/cincau 2.jpg" alt="ukuran 250ml">
+          <div class="item-detail">
+            <h3>Pesan 1</h3>
+            <div class="item-price">IDR 13K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-items"></i>
+        </div>
+        <div class="cart-items">
+          <img src="img/cincau 2.jpg" alt="ukuran 250ml">
+          <div class="item-detail">
+            <h3>Pesan 1</h3>
+            <div class="item-price">IDR 13K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-items"></i>
+        </div>
+       </div>
+
+      <!-- Shopping cart end -->
     </nav>
     <!-- Navbar end -->
 
@@ -87,11 +124,17 @@
 
       <div class="row">
         <div class="ukuran-card">
+          <div class="icons">
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
           <img src="img/250ml.jpg" alt="Ukuran 250ml">
           <h3 class="ukuran-card-tittle">- Ukuran 250ml -</h3>
           <p class="ukuran-card-price">IDR 13K</p>
       </div>
         <div class="ukuran-card">
+          <div class="icons">
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
           <img src="img/350ml.jpg" alt="Ukuran 250ml">
           <h3 class="ukuran-card-tittle">- Ukuran 350ml -</h3>
           <p class="ukuran-card-price">IDR 15K</p>
@@ -151,9 +194,28 @@
   </div>
 </footer>
 
-    <!-- Footer end-->
-    
-    <!-- Feather Icons -->
+<!-- Footer end-->
+
+
+<!-- modal box item detail start -->
+ <div class="modal" id="item-detail-modal">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/250ml.jpg" alt="Pesan 1">
+      <div class="ukuran-content">
+        <h3>Ukuran 250ml</h3>
+        <p>Minuman CIIMUT cincau lumut yang berwadah botol dengan ukuran 250ml.</p>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+<!-- modal box item detail end -->
+
+  <!-- Feather Icons -->
     <script>
       feather.replace();
     </script>
