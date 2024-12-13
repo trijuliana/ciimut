@@ -46,9 +46,7 @@ document.addEventListener("click", function (e) {
 const itemDetailModal = document.querySelector("#item-detail-modal");
 const itemDetailButton = document.querySelectorAll(".item-detail-button");
 
-itemDetailButton.forEach (btn) => {
-  btn.onclick = (e) => {
+itemDetailButton.onclick = (e) => {
   itemDetailModal.styles.display = "flex";
   e.preventDefault();
-  };
 };
